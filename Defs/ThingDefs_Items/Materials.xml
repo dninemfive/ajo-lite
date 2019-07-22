@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef Name="AJO_ThingInsertion" ParentName="RoughPlantBase">
+		<defName>AJO_RainbowPetals</defName>
+		<label>rainbow petals</label>
+		<description>A small bundle of multi-colored flower petals.</description>
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<texPath>Cupro/Item/Material/RainbowPetals</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>2</MarketValue>
+			<Mass>0.03</Mass>
+		</statBases>
+		<stackLimit>100</stackLimit>
+		<thingCategories>
+			<li>PlantMatter</li>
+		</thingCategories>
+		<comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>AJO_PaintingSupplies</defName>
+		<label>painting supplies</label>
+		<description>A large assortment of brushes and paints, perfect for any artist.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/PaintingSupplies</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Mass>0.2</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<DeteriorationRate>4</DeteriorationRate>
+		</statBases>
+		<stackLimit>10</stackLimit>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Exotic</li>
+			<li>AJO_JoyItem</li>
+		</tradeTags>
+		<stuffProps>
+			<categories>
+				<li>AJO_Paint</li>
+			</categories>
+		</stuffProps>
+	</ThingDef>
+
+</Defs>
