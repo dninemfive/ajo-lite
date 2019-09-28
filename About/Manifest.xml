@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
     <identifier>D9AJOLite</identifier>
-    <version>1.0.1</version>
-    <dependencies>
-		<li>D9DRF</li>
-	</dependencies>
-    <loadAfter/>
+    <version>1.0.2</version>
+    <loadAfter>
+		<li>D9DeconstructReturnFix</li>
+	</loadAfter>
     <suggests>
 		<li>1842663639</li> <!-- Retro Joy -->		
 	</suggests>
